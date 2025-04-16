@@ -1,10 +1,13 @@
 package com.learningjava.learn_spring_framework;
 
+import com.learningjava.learn_spring_framework.game.GamingConsole;
 import com.learningjava.learn_spring_framework.game.MarioGame;
+import com.learningjava.learn_spring_framework.game.SuperContraGame;
 
 public class GameRunner {
-    MarioGame game;
-    public GameRunner(MarioGame game) {
+    //MarioGame game;
+    private GamingConsole game;
+    public GameRunner(GamingConsole game) {
         this.game = game;
     }
 

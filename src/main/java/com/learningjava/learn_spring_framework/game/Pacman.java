@@ -1,8 +1,8 @@
 package com.learningjava.learn_spring_framework.game;
 
-public class MarioGame implements GamingConsole {
+public class Pacman implements GamingConsole {
     public void up() {
-        System.out.println("Jump");
+        System.out.println("Up");
     }
     public void down(){
         System.out.println("Down");
@@ -13,6 +13,4 @@ public class MarioGame implements GamingConsole {
     public void right(){
         System.out.println("Right");
     }
-
-
 }
