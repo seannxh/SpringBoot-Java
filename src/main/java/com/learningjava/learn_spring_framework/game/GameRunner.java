@@ -1,11 +1,21 @@
 package com.learningjava.learn_spring_framework.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
-    static MarioGame game;
-    public GameRunner(MarioGame game) {
-        GameRunner.game = game;
+    //MarioGame game;
+    private GamingConsole game;
+    public GameRunner(@Qualifier("SP_GAME") GamingConsole game) {
+        this.game = game;
     }
-    public static void run() {
-        System.out.println("Running Game:" + game);
+
+    public void run() {
+        System.out.println("System is starting up" + game);
+        game.up();
+        game.down();
+        game.left();
+        game.right();
     }
 }
