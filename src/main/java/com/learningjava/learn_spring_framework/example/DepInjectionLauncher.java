@@ -10,16 +10,23 @@ import java.util.Arrays;
 
 @Component
 class YourBusinessClass {
-    @Autowired
-    Depdency1 depdency1;
-    @Autowired
-    Depdency2 dependecy2;
+    private Depdency1 depdency1;
+    private Depdency2 depdency2;
     private String tool1 = "Udemy";
     private String tool2 = "IntelliJ";
+
+    @Autowired // Optional here if only one constructor
+    public YourBusinessClass(Depdency1 depdency1, Depdency2 depdency2) {
+        System.out.println("Constructor Injection");
+        this.depdency1 = depdency1;
+        this.depdency2 = depdency2;
+    }
+
     public String toString() {
-        return "Using " + depdency1 + " & " + dependecy2 + " & " + tool1 + " & " + tool2;
+        return "Using " + depdency1 + " & " + depdency2 + " & " + tool1 + " & " + tool2;
     }
 }
+
 @Component
 class Depdency1 {
 
