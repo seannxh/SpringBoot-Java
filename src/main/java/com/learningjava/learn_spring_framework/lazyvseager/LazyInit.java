@@ -15,7 +15,11 @@ class ClassA {
 
 }
 @Component
-@Lazy
+@Lazy // Not Used Frequently
+    // Opoosite of Lazy is eager
+    //Eager Init is used via no placement of @Lazy or lazy=false
+    //Eager is used most of the time
+    //Lazy has pros of using less memory and better for complex
 class ClassB{
     private ClassA classA;
 

@@ -1,4 +1,4 @@
-package com.learningjava.learn_spring_framework.hellospring;
+package com.learningjava.learn_spring_framework.configandbean;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

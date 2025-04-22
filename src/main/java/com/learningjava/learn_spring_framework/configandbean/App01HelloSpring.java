@@ -1,7 +1,4 @@
-package com.learningjava.learn_spring_framework.hellospring;
-import com.learningjava.learn_spring_framework.hellospring.Address;
-import com.learningjava.learn_spring_framework.hellospring.Person;
-import com.learningjava.learn_spring_framework.hellospring.HelloWorldConfig;
+package com.learningjava.learn_spring_framework.configandbean;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,4 +1,4 @@
-package com.learningjava.learn_spring_framework.example0;
+package com.learningjava.learn_spring_framework.simpleinj;
 
 import com.learningjava.learn_spring_framework.GamingAppLauncherApplication;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
